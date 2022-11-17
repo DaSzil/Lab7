@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Descriere Somogyi Szilard-Karoly </title>
+		<style>
+		
+		header{
+		height: 40px;
+		background-color: #67db7a;
+		}
+		
+		body{
+		padding: 30px;
+		margin: 0;
+		font-family: tahoma;
+		background-color: #a9d0de;
+		}
+		
+		#NumePrenume{
+		margin-left:10px;
+		}
+		
+		table, td{
+		border: 2px solid;
+		border-collapse: collapse;
+		padding:20 px;
+		}
+		
+		#Hobby-uri{
+		border-style: dashed;
+		width: 250px;
+		}
+		
+		#pozeprofil {
+		border-radius: 50px;
+		padding: 20px;
+		position: absolute;
+		top: 90px;
+		right: 180px;
+		opacity: 0.9;
+		}
+		
+		
+		footer{
+		background-color: #67db7a;
+		padding: 10px;
+		}
+		
+		</style>
+
+		
+		
+	</head>
+	
+	
+	<body id = "body" onload = "AddNewItem()">
+		
+
+		<header id = "header">
+		<h1 id="NumePrenume">Somogyi Szilard-Karoly 
+		<button onclick = "changeProfile()"> Alta Viata</button>
+		</h1>
+		</header>
+		
+		<img id="pozeprofil" src="AGP-64.jpg" width="300px" height="450px">
+		<p>Somogyi.Ka.Szilard@student.utcluj.ro</p>
+		<p>“Educaţia nu este cât de mult ai memorat, nici măcar cât ştii. Este 	 capacitatea de a diferenţia între ceea ce ştii şi ceea ce nu ştii” – Anatole France </p>
+		<h2>Educatie</h2>
+		
+		<table id="tabelEducatie">
+			
+			<tbody>
+				<tr>
+					<td id = "realizare_r1">Semnale si sisteme:</td>
+					<td id = "perioada_r1">(Disciplina din Anul II, sem I):</td>
+					<td id = "link_r1"> https://etti.utcluj.ro/files/Acasa/Site/FiseDisciplina/EaRo/17.pdf </td>
+				</tr>
+			
+				<tr>
+					<td id = "realizare_r2">Tehnici CAD:</td>
+					<td id = "perioada_r2">(Disciplina din Anul II, sem II):</td>
+					<td id = "link_r2">https://etti.utcluj.ro/files/Acasa/Site/FiseDisciplina/EaRo/28.pdf</td>
+				</tr>
+			
+				<tr>
+					<td id = "realizare_r3">Microcontrolere:</td>
+					<td id = "perioada_r3">(Disciplina din Anul III, la specializarea de Electronica Aplicata, sem II):</td>
+					<td id = "link_r3">https://etti.utcluj.ro/files/Acasa/Site/FiseDisciplina/EaRo/41.pdf</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<h2>Hobby-uri:</h2>
+			<ul id="Hobby-uri">
+			<li> Cantatul la chitara </li>
+			<li> Jocurile pe calculator </li>
+			<li> Programarea in Unity </li>
+		</ul>
+		<button><a href="../ex3.html">Back</a></button>
+		<p></p>
+		
+		
+		<img id = "Romania" src="Hungary.gif" alt="Sunt de origine Maghiar, deci am adaugat un steag al Ungariei.">
+		<footer  id = "footer" style=" position: absolute; left: 40px; top: 600px"> Acesta este un footer colorat.
+		</footer>
+		
+		<footer id = "birthdate" style=" position: absolute; left: 40px; top: 650px"></footer>
+		
+		<script src ="ex2.js"></script>
+		
+	</body>
+</html>

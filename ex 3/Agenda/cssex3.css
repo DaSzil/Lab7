@@ -1,0 +1,21 @@
+header{
+	height: 50px;
+	padding: 10px;
+	text-align:center;
+}
+
+h1 span{
+background-color:#d0f2ea;
+}
+
+body{
+margin 0;
+padding: 10px;
+background-color: #ebc5a0;
+font-family:Tahoma;
+}
+#ListaPers{
+	display: table;
+	margin: 0 auto;
+	border-style:solid;
+}
