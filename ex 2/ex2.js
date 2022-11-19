@@ -41,7 +41,7 @@
 		}
 		
 		function oldToNewImage(){
-		//
+		//Schimba imaginea veche in cea noua, adaugata de mine
 			var img = document.getElementById("pozeprofil");
 			img.src = "./image2.jpg";
 			img.style.opacity = 0.9;
