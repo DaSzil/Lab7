@@ -13,14 +13,15 @@
 		
 		function educationToAchievements(){
 		
-			var r1 = document.getElementById("realizare_r1");
-			var p1 = document.getElementById("perioada_r1");
-			var l1 = document.getElementById("link_r1");
-			r1.innerHTML = "Intership";
-			p1.innerHTML = "04.06.2024 - 28.09.2024";
-			l1.innerHTML = "https://www.nvidia.com/en-us/about-nvidia/careers/university-recruiting/";
+		//schimbare primul rand tabel
+		var r1 = document.getElementById("realizare_r1");
+		var p1 = document.getElementById("perioada_r1");
+		var l1 = document.getElementById("link_r1");
+		r1.innerHTML = "Intership";
+		p1.innerHTML = "04.06.2024 - 28.09.2024";
+		l1.innerHTML = "https://www.nvidia.com/en-us/about-nvidia/careers/university-recruiting/";
 		
-		
+		//schimbare al doilea rand tabel
 		var r2 = document.getElementById("realizare_r2");
 		var p2 = document.getElementById("perioada_r2");
 		var l2 = document.getElementById("link_r2");
@@ -28,6 +29,7 @@
 		p2.innerHTML = "26.06.2026";
 		l2.innerHTML = "https://etti.utcluj.ro/finalizare-studii.html";
 		
+		//schimbare al treilea rand tabel
 		var r3 = document.getElementById("realizare_r3");
 		var p3 = document.getElementById("perioada_r3");
 		var l3 = document.getElementById("link_r3");
@@ -76,13 +78,17 @@
 
 
 
-	function AddNewItem() {
-	// call all functions
-	addBirthDate();
-	createEmailTextBox();
+function AddNewItem() {
+// call all functions
+addBirthDate();
+createEmailTextBox();
 }
 
+
+
 function addBirthDate() {
+	//Creaza casuta in care se afiseaza data nasterii si varsta
+	
 	var tag = document.createElement("h3");
 	tag.id = "date-years";
 	var text = document.createTextNode("09-03-2003");
@@ -94,6 +100,7 @@ function addBirthDate() {
 }
 
 function birthToYears() {
+	//Calculeaza varsta folosind data calendaristica a utilizatorului
 	var currentTime = new Date();
 	var vv = document.getElementById("date-years");
 	var year = currentTime.getFullYear()
@@ -102,10 +109,12 @@ function birthToYears() {
 }
 
 function handleMouseOut() {
+	//Afiseaza varsta cand utilizatorul da hover asupra casutei
 		document.getElementById("date-years").innerHTML = '09-03-2003';
 	}
 
 function createEmailTextBox() {
+	//Creaza casuta in care utilizatorul isi poate introduce e-mail-ul
 	var input = document.createElement("input");
 	input.type = "email";
 	input.id = "email-box";
@@ -116,6 +125,7 @@ function createEmailTextBox() {
 }
 
 function validateEmail() {
+	//inspecteaza daca e-mail-ul introdus este valid (este de forma text@text.com)
 	var input = document.getElementById("email-box");
   	var validRegex = /^\S+@\S+\.\S+$/;
   	if (input.value.match(validRegex)) {
