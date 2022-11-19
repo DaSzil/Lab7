@@ -1,5 +1,6 @@
 
 		function changeProfile(){
+			// call all functions to change profile
 			NameToJob();
 			educationToAchievements();
 			oldToNewImage();
@@ -7,10 +8,11 @@
 		}
 		
 		function NameToJob(){
-		//
+		//Schimba header-ul cu numele meu cu job-ul din viitor pe care as vrea sa-l am
 			document.getElementById("NumePrenume").innerHTML = "Inginer Hardware - NVIDIA";
 		}
 		
+
 		function educationToAchievements(){
 		
 		//schimbare primul rand tabel
